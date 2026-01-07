@@ -24,7 +24,7 @@ def number_pattern(n):
     result = ""
     row = 1
 
-    while row_number <= n:
+    while row <= n:
         current_number = 1
         while current_number <= row:
             result += str(current_number)
