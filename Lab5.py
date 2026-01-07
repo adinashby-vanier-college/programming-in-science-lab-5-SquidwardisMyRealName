@@ -22,17 +22,17 @@ def hollow_square(n):
 # 1234
 def number_pattern(n):
     result = ""
-    row_number = 1
+    row = 1
 
     while row_number <= n:
         current_number = 1
-        while current_number <= row_number:
+        while current_number <= row:
             result += str(current_number)
             current_number += 1 
         
-        if row_number < n:
+        if row < n:
             result += "\n" 
-        row_number += 1
+        row += 1
 
     return result 
 
