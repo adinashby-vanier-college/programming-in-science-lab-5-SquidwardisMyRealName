@@ -21,15 +21,24 @@ def hollow_square(n):
 # 123
 # 1234
 def number_pattern(n):
-    return "" 
+    result = ""
+    row_number = 1
 
+    while row_number <= n:
+        current_number = 1
+        while current_number <= row_number:
+            result += str(current_number)
+            current_number += 1 
+        
+        if row_number < n:
+            result += "\n" 
+        row_number += 1
 
+    return result 
 
-
-# natural_number = int(input("Type a natural number: "))
+# natural_number = int(input("Enter a natural number: "))
 # number_pattern(natural_number)
 # print(number_pattern(natural_number))
-
 
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
 def sum_of_natural_numbers(n):
