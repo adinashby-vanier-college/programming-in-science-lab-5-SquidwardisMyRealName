@@ -59,14 +59,15 @@ def sum_of_natural_numbers(n):
 # *******
 def centered_star_pyramid(n):
     result = ""
+    i = 1 
 
-    for number in range(1, n + 1): 
-        result += " " * (n - number) + "*" * (2 * number - 1)
-
-        if number != n:
-            result += "\n" 
-    
-    return result
+    for i in range(n):
+        for j in range (n - i - 1):
+            result += " "
+        for k in range (2 * i + 1):
+            result += "*"
+        result += "\n"
+    return result.rstrip()
 
 
 # natural_number = int(input("Enter a natural number: "))
