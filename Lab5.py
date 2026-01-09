@@ -21,20 +21,17 @@ def hollow_square(n):
 # 123
 # 1234
 def number_pattern(n):
-    result = ""
-    row = 1
+    result = "" 
 
-    while row <= n:
-        current_number = 1
-        while current_number <= row:
-            result += str(current_number)
-            current_number += 1 
-        
-        if row < n:
-            result += "\n" 
-        row += 1
+    for i in range (1, n + 1):
+        for j in range (1, i + 1):
+            result += str(j)
+        result += "\n"
+    
+    return result.rstrip()
 
-    return result 
+# n = int(input("Enter a natural number: "))
+# print(number_pattern(n)) 
 
 # natural_number = int(input("Enter a natural number: "))
 # number_pattern(natural_number)
