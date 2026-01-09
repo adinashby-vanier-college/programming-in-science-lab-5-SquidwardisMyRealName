@@ -33,10 +33,6 @@ def number_pattern(n):
 # n = int(input("Enter a natural number: "))
 # print(number_pattern(n)) 
 
-# natural_number = int(input("Enter a natural number: "))
-# number_pattern(natural_number)
-# print(number_pattern(natural_number))
-
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
 def sum_of_natural_numbers(n):
     result = 0
